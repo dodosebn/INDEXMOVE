@@ -1,0 +1,237 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+
+body{
+    font-size: 16px;
+    background: hsl(235, 18%, 26%);
+    font-weight:400,700;   
+}
+
+.everything{
+    background-color: #fff;
+    color:#000;
+  margin-top: 120px;
+  margin-left: 220px;
+  margin-bottom: 120px;
+  margin-right: 390px;
+    height: 450px;
+    border-radius: 20px;
+}
+
+.title_{
+    text-transform: capitalize;
+    display: flex;
+    margin-left: 45px;
+    position: absolute;
+    margin-top: 60px;
+    color: hsl(235, 18%, 26%);
+    cursor: pointer;
+}
+
+.pre-body{
+    margin-left: 45px;
+    display: flex;
+    position: absolute;
+    top:15rem;
+    cursor: pointer;
+}
+
+.pre-body p{
+    margin-left: 14rem;
+}
+
+.check-box{
+    position: absolute;
+    align-items: left;
+    margin-left: 230px;
+    margin-top: 60px;
+    cursor: pointer;
+    word-spacing: 0.1rem;
+}
+
+input[type="checkbox"]{
+    background-color: hsl(4, 100%, 67%);
+}
+
+    
+.email {
+    position: absolute;
+    align-items: left;
+    margin-left: 230px;
+    left: 3rem;
+    top: 27rem;
+    cursor: pointer;
+    word-spacing: 0.1rem;
+    width: 80%;
+}
+
+.email label{
+    color: hsl(235, 18%, 26%);
+    border-radius: none;
+}
+
+.email{
+justify-content: flex-end;
+border-radius: none;
+}
+
+.email input{
+height: 35px;
+flex:1;
+font-size: 15px;
+width: 30%;
+border-radius: 4px;
+}
+
+.subscribe{
+    margin:10px;
+}
+
+.subscribe input{
+background: hsl(234, 29%, 20%);
+color:hsl(0, 0%, 100%);
+font-size: 15px;
+align-items: center;
+align-self: center;
+padding: 10px;
+position: absolute;
+bottom: 5rem;
+left: 17rem;
+border: none;
+border-radius: 3px;
+display: block;
+width: 24%;
+}
+
+.subscribe input:hover{
+    background: hsl(4, 100%, 67%);
+    color: rgb(255, 255, 255);
+}
+
+.image{
+    display: block;
+    width: 25%;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 100px;
+    margin-left: 230px;
+    left: 25.5rem;
+    top: 8rem;
+    position: absolute;
+    cursor: pointer;
+}
+
+.subbody{
+    background-color: #fff;
+  margin-top: 120px;
+  margin-left: 420px;
+  margin-right: 590px;
+    height: 300px;
+    bottom: 7rem;
+    border-radius: 20px;
+    position: relative;
+}
+
+.add-everything input[type="radio"]{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 40px;
+    width: 40px;
+    background-color: hsl(4, 100%, 67%);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+left:2rem;
+top:2rem;
+position:absolute;
+border-radius: 40px;
+}
+
+.add-everything label{
+    font-weight: 600, 900;
+    position: absolute;
+    top:2.5rem;
+    left:2.5rem;
+    color: #fff;
+}
+
+.fa{
+color:white;
+
+}
+
+/*.add-everything input[type="radio"]:after{
+font-weight: "900";
+font-size: 50px;
+color: white;
+}*/
+
+.prop{
+      top:6rem;
+      left:2rem;
+      position:absolute; 
+      text-transform: capitalize;
+      font-size: 23px;
+      color:hsl(235, 18%, 26%);
+      cursor: pointer;
+}
+
+.inner-prop{
+margin-top: 180px;    
+ left:2rem;
+      position:absolute; 
+      cursor: pointer;
+      font-size: 12px;
+      width: 530px;
+}
+
+.inner-prop a{
+    text-decoration: none;
+    color:hsl(234, 29%, 20%);
+}
+
+.dismiss{
+    left:2rem;
+    bottom: 1rem;
+         position:absolute; 
+         cursor: pointer;
+         font-size: 12px;
+         width: 530px;
+         margin-top: 40px;
+}
+
+.dismiss input{
+    display: block;
+    width: 50%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color:  hsl(0, 0%, 100%);
+    background:hsl(4, 100%, 67%);
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.dismiss input:hover{
+    background:hsl(234, 29%, 20%) ;
+    color: rgb(255, 255, 255);
+}
+
+@media only screen and (min-width: 375px){
+    .container {
+      width: 375pxpx;
+      margin: 0 auto;
+    }
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
