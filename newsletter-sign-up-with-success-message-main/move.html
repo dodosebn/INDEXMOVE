@@ -1,35 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="move.css">
-        <script defer src="move.js"></script>
-        <title>Form Validation</title>
-    </head>
-    <body>'
-        <form id="form" action="#">
-            <h1>Registration</h1>
-            <div class="input-control">
-                <label for="username">UserName</label>
-                <input id="username" name="username" type="text">
-                <div class="error"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trinity</title>
+    <link rel="stylesheet" href="move.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="everything" id="everything">
+    <div class="menu">
+        <ul>
+            <li><a href="#"  onclick="alert('Still under Development...dont be offended')"><i class="fa-solid fa-house"></i>HOME</a></li>
+            <li><a href="#" onclick="alert('Still under Development...dont be offended')"><i class="fa fa-user"></i>SPONSOR</a></li>
+      <li><a href="#" onclick="alert('Still under Development...dont be offended')"><i class="fas fa-image"></i>OUR GALLERY</a></li>     
+      <li><a href="#" onclick="alert('Still under Development...dont be offended')"><i class="fas fa-bars"></i>FEATURES</a></li> 
+        </ul>
+    </div>
+
+    <div class="container">
+   <!-- <h1 class="form-title">REGISTRATION</h1>-->
+    <form action=" " method="post" id="form" onsubmit="return validateInputs()">
+        <fieldset>
+        <div class="main-user-info" id="main"> 
+        <div class="user-input-box" id="user">
+        <label for="Fullname"> Full name</label>
+        <input type="text" id="fullName" name="Fullname" placeholder="Enter Full Name"/>
+        </div>
+
+         <div class="user-input-box">
+        <label for="Username">User Name</label>
+        <input type="text" id="userName" name="Username" placeholder="Enter Username"/>
+        </div>
+
+        <div class="user-input-box">
+        <label for="email"> Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter Email"/>
+        </div>
+
+        <div class="user-input-box">
+         <label for="PhoneNumber">Phone Number</label>
+        <input type="number" id="phoneNumber" name="PhoneNumber" maxlength="11" 
+        placeholder="Enter phone Number"/>
+        </div>
+
+        <div class="user-input-box">
+            <label for="color">Favorite Colour</label>
+           <input type="color" id="fColor" name="fColor"  placeholder="Enter Favorite Colour"/>
+           </div>
+
+        <div class="user-input-box">
+            <label for="dateofbirth">D.O.B</label>
+           <input type="date" id="DOB" name="Birthday"  placeholder="Date of Birthday"/>
+           </div>
+
+        <div class="user-input-box">
+        <label for="Password">Password</label>
+        <input type="password" id="passWord" name="Password" placeholder="Enter Password" />
             </div>
-            <div class="input-control">
-                <label for="email">Email</label>
-                <input id="email" name="username" type="text">
-                <div class="error"></div>
-            </div>
-            <div class="input-control">
-                <label for="Password">Password</label>
-                <input id="password" name="password" type="password">
-                <div class="error"></div>
-            </div>
-            <div class="input-control">
-                <label for="password">Password Again</label>
-                <input id="password2" name="password2" type="password">
-                <div class="error"></div>
-            </div>
-            <button type="submit">Sign Up</button>
-        </form>
-    </body>
+
+         <div class="user-input-box">
+        <label for="confirmpassword"> Confirm Password</label>
+        <input type="password" id="cPassWord" name="confirmpassword" placeholder="Confirm Password"/>
+         </div>
+       
+        
+        <div class="signUp">
+            <input type="submit" id="subsign" value="SIGN UP">
+        </div>
+
+        <div class="logIn">
+            <p>Already Have an Account??...Log In Rather</p>
+          <input type="submit" id="yawa" value="Log In">
+        </div>
+    </div>
+</fieldset>
+    </form>
+</section>
+
+<section class="after_btn" id="after_btn">
+    <div class="upnext" id="upnext">
+        <section class="utitle" id="utitle">
+            <h1>MORE MONEY <span>ENTERPRISE</span></h1></section>
+<span class="motto"><h3>MOTTO:</h3><h4>We care about your Good look!!</h4></span>
+</div>
+       <div class="post-body">
+            <h1>Hey! Take A look at our Gallery</h1>
+ <form action="" method="post">
+        <input type="text" id="search-input" placeholder="search for images">
+        <button id="search-button"> search</button>
+    </div>
+    </div>
+    <div class="search-results">
+        <div class="search-result">
+            <img src="https://images.unsplash.com/photo-1596362601603-b74f6ef166e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" 
+            alt="our Working Tools">
+            <a href="https://unsplash.com/photos/Znyjl9pbaUs" target="_blank">our Working Tools</a>
+        </div>
+        </div>
+        <div class="search-results">
+            <div class="search-result">
+                <img src="https://plus.unsplash.com/premium_photo-1661382022096-d652c06cf1be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aGFpcmN1dHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" 
+                alt="Your Good look it's all we care">
+                <a href="https://unsplash.com/photos/ZwJukeAZSRw" target="_blank">Your Good look it's all we care</a>
+
+    
+    </form> 
+    </div>
+
+</section>
+
+
+<!--MA THIS WAS ACTUALLY FOR THE LOGIN SO IF YOU CLICK IT YOU WILL 
+SEE THE FORM AND LOG IN BUT I'VE TRIED LINKING IT WITH MY SCRIPT BUT IT ISN'T WORKING-->
+<section class="logform">
+        <form action="#">
+           <fieldset> 
+            <section class="bass" id="bass">      
+    <span class="rave">
+    <label for="USER NAME">USER NAME</label>
+    <input type="text" id="username" name="username" placeholder="enter your username"/>
+    </span>
+
+    <span class="rave">
+    <label for="Address">EMAIL</label>
+    <input type="email" id="email" name="email" placeholder="enter your email"/>
+        </span>
+
+        <span class="rave">
+            <label for="Address">PASSWORD</label>
+            <input type="password" id="passWord" name="passWord" placeholder="enter passWord"/>
+                </span>
+
+                <span class="rave">
+                    <label for="Address">CONFIRM PASSWORD</label>
+                    <input type="Confrim password" id="cPassWord" name="cpassWord" placeholder="confrim passWord"/>
+                        </span>
+
+                        <span class="rave">
+
+                            <label for="textarea">ASK US ANYTHING </label>
+                            <textarea name="textarea" id="textarea" cols="30" rows="10" style="height:60px; position: relative; left:620px; top:50px"></textarea>
+                        </span>
+                        <span class="logg">
+    <input type="submit" id="lastlog" value="LOG IN">
+</span>
+                </section>
+    </fieldset>
+</form>
+</section>
+</body>
+<script>
+    let lastlog = document.getElementById('lastlog');
+    let subsign = document.getElementById('subsign');
+    let sublog = document.getElementById('yawa');
+    let body = document.getElementById('after_btn');
+    let everything = document.getElementById('everything');
+    let form = document.getElementById('form');
+    let fullName = document.getElementById('fullName');
+    let passWord = document.getElementById('passWord');
+let cPassWord = document.getElementById('cPassWord');
+let username = document.getElementById('username');
+let email = document.getElementById('email');
+let phoneNumber = document.getElementById('phoneNumber');
+let logform = document.getElementById('logform');
+let bass = document.getElementById('bass');
+
+/*if (!window.preventprompts) {
+  window.prompt = function(message) {
+  };
+}*/
+
+lastlog.addEventListener("click", (event) =>{
+event.preventDefault();
+confuse();
+validateInputs();
+must();
+});
+
+function confuse(){
+    bass.style.dispay="none";
+     body.style.display="block";
+}
+
+
+
+sublog.addEventListener("click", (event) => {
+    event.preventDefault();
+    nerve();
+});
+
+function nerve(){
+    form.style.display="none";
+    bass.style.display="block";
+}
+
+
+
+    subsign.addEventListener("click", (event) => {
+  event.preventDefault(); // Prevent the default form submission behavior
+  magixx();
+  validateInputs();
+  must();
+});
+
+
+function must() {
+    if (validateInputs()=="");{
+        magixx().display="none";
+       confusion().display="none";
+    }
+}
+
+
+function magixx(){
+form.style.display="none";
+body.style.display="block";
+}
+
+
+function validateInputs ()   {
+if (fullName.value== ""){
+        alert("Error: Input is Empty");
+        return false;
+    }
+
+    var re = /^[\w ]+$/;
+if(!re.test( fullName.value)){
+alert("Error: Inputs Contains invalid Characters!");
+return false;
+}   
+
+  if (passWord.value == "") {
+    alert("Error: password is empty");
+    return false;
+  } else if (passWord.value !== cPassWord.value) {
+    alert("Error: passwords don't match");
+    return false;
+  }
+
+  return true;
+
+
+}
+</script>
 </html>

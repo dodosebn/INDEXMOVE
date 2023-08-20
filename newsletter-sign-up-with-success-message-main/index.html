@@ -2,12 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="index.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  <script src="index.js"></script>
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
 </head>
@@ -21,7 +19,7 @@
     </div>
     
     </div>
-    
+  
     <div class="pre-body">
      <p>Join 60,000+ product managers receiving monthly
       <br>updates on: </p> 
@@ -48,7 +46,7 @@
     </div>
     
   <div class="subscribe">
-    <input type="submit" value="Subscribe To Monthly Newsletter">
+    <input type="submit" id="subscribe" value="Subscribe To Monthly Newsletter">
   </div>
 
   <div class="image">
@@ -56,33 +54,68 @@
   </div>
  </section>
 
-  <div class="subbody">
+  <div class="subbody" id="subbody">
   <div class="add-everything">
     <input type="radio" name="radio"   id="radio" checked>
     <label for="radio"><i class="fa-solid fa-2x fa-check"></i></label>
   </div>
-  <section class="prop">
+  <section class="prop" id="prop">
     <H1>
      <p>Thanks For </p> 
      <p> subscribing!</p>
     </H1>
   </section>
-  <section class="inner-prop">
+  <section class="innerprop" id="inner-prop">
   <p>A confirmation mail has been sent to </P>
     <a href="#">ash@loremcompany.com</a>&nbsp;please open it and click
  <P>the inside botton  to comfirm your subscribtion </p>
 </section>
-<section class="dismiss">
-  <input type="submit" Value="Dismiss Message ">
+<section class="dismiss" id="dismiss">
+  <input type="submit" Value="Dismiss  Message" id="submit">
 </section>
 </div>
-
-
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Orji Dominion Ebubennia</a>.
+    Coded by <a href="#">Orji Dominion Ebubennia</a>
   </div>
 </div>
 </body>
+<script>
+  let subbody = document.getElementById("subbody");
+  let radio = document.getElementById("radio");
+  let body = document.querySelector(".main-body");
+  let prop = document.getElementById("prop");
+  // let innerprop = document.getElement("innerprop");
+  let dismiss = document.getElementById("dismiss");
+  let submit = document.getElementById("submit");
+  let subscribe = document.getElementById("subscribe");
+//   button.addEventListener("click", function() {
+//   alert("Button clicked!");
+// });
+
+console.log(body);
+
+subscribe.addEventListener("click", () => {
+  show()
+})
+
+function show() {
+  console.log(body);
+     body.style.display = "none"  
+     subbody.style.display = "block" 
+}
+
+console.log(subbody);
+
+dismiss.addEventListener("click", () => {
+hide()
+})
+
+function hide() {
+  console.log(subbody);
+  subbody.style.display = "none"
+}
+
+</script>
 </html>
+`
